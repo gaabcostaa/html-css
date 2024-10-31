@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        div#cxA {
+            /*flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 200px;*/
+
+            flex: 1 0 200px;            
+        }
+
+        div#cxB {
+            /*flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 150px;*/
+
+            flex: 1 0 150px
+        }
+
+        div#cxC {
+            /*flex-grow: 1;
+            flex-shrink: 8;
+            flex-basis: auto;*/
+
+            flex: 1 1 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxA">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos recusandae architecto distinctio? Quo repellendus hic sit possimus, cumque quis rerum, amet dolorem, dicta nesciunt explicabo deserunt error labore culpa laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dolorum explicabo eius, aut accusamus praesentium molestias saepe nihil porro, illum ea facere repellat! Alias debitis officiis voluptate adipisci magnam ea.</div>
+        <div class="item" id="cxB">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fugit harum, consequatur facilis, tempora aut beatae in doloribus repellat, culpa consequuntur accusantium dolorum iste sit voluptates. Nemo esse tenetur adipisci. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam ex ipsa soluta ullam sapiente delectus vero veniam quo dolor fugit consequuntur commodi nihil, modi dignissimos. Ea libero commodi id nemo!</div>
+        <div class="item" id="cxC">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut possimus, repudiandae sed tenetur incidunt a error. Nobis, perspiciatis quisquam! Est doloremque odio laborum totam aperiam quibusdam praesentium corrupti maxime nesciunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas nisi, sed, molestiae, deserunt repellat minus inventore aliquid reiciendis ad quod rem ratione unde nulla ducimus. Aspernatur rerum doloribus suscipit totam.</div>
+    </div>
+</body>
+</html>
