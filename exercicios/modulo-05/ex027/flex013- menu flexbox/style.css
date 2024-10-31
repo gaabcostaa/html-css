@@ -23,12 +23,13 @@ header {
 }
 
 header > h1 {
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
     flex: 0 0 200px; /* não cresce, não diminui, 200px pra dar um espaço para o h1 ou logo do site */
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.404);
 }
 
 header > nav {
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
@@ -42,13 +43,12 @@ header > nav > a {
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
-    flex: ;
 }
 
 header > nav > a:hover {
     background-color: white;
     color: black;
-    transition: background-color .4s;
+    transition: background-color .2s;
 }
 
 main {
